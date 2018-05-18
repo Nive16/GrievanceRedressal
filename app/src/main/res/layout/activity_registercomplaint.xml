@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbars="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.vision.grievanceredressal.registerComplaint">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/RelativeView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:scrollbars="none|vertical">
+
+
+            <EditText
+                android:id="@+id/problemdesctext"
+                android:layout_width="349dp"
+                android:layout_height="200dp"
+                android:layout_alignEnd="@+id/descriptionView"
+                android:layout_alignStart="@+id/descriptionView"
+                android:layout_below="@+id/descriptionView"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Problem Description"
+                android:inputType="textMultiLine"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="495dp" />
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="27dp"
+                android:text="REGISTRATION"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/problemCategoryView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/location"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:text="Problem Category:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/problemCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/problemCategoryView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/stateView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/heading"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text="State:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <Spinner
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/stateView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/districtview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/state"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:text="District:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/districtview"
+                android:layout_below="@+id/districtview"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/locationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/district"
+                android:layout_below="@+id/district"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:text="Anganwadi Location Area:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/locationView"
+                android:layout_below="@+id/locationView"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/ageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/problemCategory"
+                android:layout_below="@+id/problemCategory"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:text="Age:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ageView"
+                android:layout_below="@+id/ageView"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/descriptionView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/problemTitlleText"
+                android:layout_below="@+id/problemTitlleText"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:text="Problem Description:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/problemtitleview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/age"
+                android:layout_below="@+id/age"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:text="Problem Title"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/problemTitlleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/problemtitleview"
+                android:layout_below="@+id/problemtitleview"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Title"
+                android:inputType="textPersonName" />
+
+
+            <ImageView
+                android:id="@+id/problemImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_alignStart="@+id/problemdesctext"
+                android:layout_below="@+id/uploadImage"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/grievance" />
+
+            <Button
+                android:id="@+id/uploadImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="false"
+                android:layout_below="@+id/problemdesctext"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="false"
+                android:layout_centerVertical="false"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Upload Image"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="728dp" />
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/problemImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/holo_green_dark"
+                android:padding="22dp"
+                android:text="Register"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="154dp"
+                tools:layout_editor_absoluteY="776dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/problemdesctext"
+                android:layout_below="@+id/problemdesctext"
+                android:text="TextView" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

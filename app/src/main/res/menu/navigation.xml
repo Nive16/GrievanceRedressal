@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_complaints_unsl"
+        android:icon="@drawable/complaints"
+        android:title="Complaints" />
+
+    <item
+        android:id="@+id/navigation_complaints_sl"
+        android:icon="@drawable/complaints_solved"
+        android:title="Complaints(Solved)" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_notifications" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/user"
+        android:title="Profile" />
+
+</menu>
